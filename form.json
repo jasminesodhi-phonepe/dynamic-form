@@ -1,0 +1,74 @@
+{
+    "form": {
+        "fields": 4,
+        "formTitle": "Form 1",
+        "buttonTitle": "Scan QR",
+        "attributes": [
+            {
+                "fieldType": "numeric",
+                "labelText": "Phone Number",
+                "maxLabelLength": 100,
+                "validations": {
+                    "isBlank": true,
+                    "length": 10,
+                    "isNum": true
+                }   
+            },
+            {
+                "fieldType": "text",
+                "labelText": "Text",
+                "maxLabelLength": 100,
+                "validations": {
+                    "isBlank": true,
+                    "maxLength": 100
+                }   
+            },
+            {
+                "fieldType": "date",
+                "labelText": "Date",
+                "maxLabelLength": 100,
+                "validations": {
+                    "isBlank": "no",
+                    "maxLength": 100,
+                    "greaterThanToday": "04-10-2018",
+                    "lessThan": "01-01-2019" 
+                }   
+            },
+            {
+                "fieldType": "dropdown",
+                "labelText": "Dropdown",
+                "maxLabelLength": 100,
+                "options": [
+                    "One",
+                    "Two",
+                    "Three"
+                ],
+                "validations": {
+                    "isBlank": true
+                }
+            },
+            {
+                "fieldType": "QRScan",
+                "labelText": "Scan QR",
+                "maxLabelLength": 0,
+                "validations": {
+                    "isBlank": "no",
+                    "galleryControl": "no",
+                    "cameraControl": "yes",
+                    "imgCount": 1
+                }   
+            },
+            {
+                "fieldType": "imageUpload",
+                "labelText": "Upload Image",
+                "maxLabelLength": 0,
+                "validations": {
+                    "isBlank": "no",
+                    "galleryControl": "yes",
+                    "cameraControl": "yes",
+                    "imgCount": 10
+                }   
+            }
+        ]
+    }
+}
